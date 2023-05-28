@@ -1,141 +1,364 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
 
-        <!-- Favicon-->
-        <link href="./static/img/favicon.png" rel="icon">
-        <link href="./static/img/favicon-touch-icon.png" rel="favicon-touch-icon">
-    
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <!-- Enlace a los archivos CSS de Font Awesome --> <!-- Enlace es https://fontawesome.com/search-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Enlace a los archivos CSS para efectos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Favicon-->
+    <link href="./static/img/favicon.png" rel="icon">
+    <link href="./static/img/favicon-touch-icon.png" rel="favicon-touch-icon">
 
-        <!-- Personal CSS -->
-        <link rel="stylesheet" href="./static/css/style.css">
-        
-        <title>Diego Mata. Developer</title>
-      </head>
-      <body>
-          <!-- ======= Header ======= -->
-            <header id="header">
-                <div class="container-fluid">
-                    <div class="container">
-                        <nav class="navbar navbar-expand-lg navbar-dark">
-                            <div class="container-fluid">
-                              <a class="navbar-brand" href="#">Diego Mata</a>
-                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                              </button>
-                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                  <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#about">About</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#resume">Resume</a>
-                                  </li>
-                                </ul>
-                              </div>
+
+    <title>Diego Mata M. Developer</title>
+</head>
+
+<body>
+
+    <!-- Cuerpo de la Página -->
+    <div class="container">
+
+        <!-- Contenedor de la Página -->
+        <div class="contenedor">
+            <!-- Menú de la Página -->
+            <header class="header">
+                <nav class="nav">
+                    <a href="./index.html" class="logo">
+                        <div class="logo-o"><i class="fas fa-solid fa-code" id="code-hiden"></i></div>
+                        <div class="logo-m"><i class="fas fa-solid fa-code" id="code-unhiden"></i>Diego Mata</div>
+                    </a>
+                    <ul>
+                        <li><a href="#hero"><i class="fa-solid fa-house"></i> Home</a></li>
+                        <li><a href="#about"><i class="fa-solid fa-pen-nib"></i> About</a></li>
+                        <li><a href="#skill"><i class="fas fa-solid fa-user-tie"></i> Resume</a></li>
+                        <li><a href="#portafolio"><i class="fa-solid fa-briefcase"></i> Works</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Contenido de la Página -->
+            <div class="contenido" id="contenido">
+                <div class="contenido-grid">
+                    <div class="hero" id="hero">
+
+                        <h1 class="Nombre"><span class="typedName"></span></h1>
+
+                        <div class="Nombre" id="cadenas-texto-name">
+                            <p><i class="">Diego Mata Miranda</i></p>
+                        </div>
+
+                        <!-- Forma 1 -->
+                        <!-- <h2 class="titulo">I'm <span class="typed primary"></span></h2> -->
+
+                        <!-- Forma 2 -->
+                        <h2 class="titulo"><span class="typed"></span></h2>
+
+                        <div class="titulo" id="cadenas-texto">
+                            <p class="titulo">I'm <i class="profesion primary">Devoloper</i></p>
+                            <p class="titulo">I'm <i class="profesion primary">Analista</i></p>
+                            <p class="titulo">I'm <i class="profesion primary">Other</i></p>
+                        </div>
+
+                        <p id="descripcion" class="animate__animated animate__fadeInUp">
+                            Desarrollador de software y analista de datos ,<br> con una sólida experiencia<br>
+                            en la creación de aplicaciones complejas<br> con tecnologías de vanguardia.
+                        </p>
+                        <div class="borde-boton animate__animated animate__fadeInUp">
+                            <div class="botton-Contact">
+                                <a href="mailto:diegomata90@gmail.com" class="link">Contacta<br>
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;me!</span>
+                                </a>
                             </div>
-                          </nav>
-                    </div>
-                </div>               
-            </header><!-- End Header -->
-
-            <section id="home" class="home">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12">
-                            <h2 class="text-left">Diego Mata M.</h2> 
-                            <h3 class="titulo">I'm <span class="typed"></span></h3>
                         </div>
-                        <div class="col-md-6 col-sm-12">
-                            <img src="./static/img/Mecartoon.png" alt="" class="img-fluid" id="img-home">
+                    </div>
+                    <div class="hero-foto">
+                        <div class="contenedor-circo">
+                            <img src="./static/img/perfil.jpeg" alt="foto">
+                        </div>
+                        <div class="divredes">
+                            <a href="https://www.linkedin.com/in/diego-mata-1ts1st3m45/"><i
+                                    class="fa-brands fa-linkedin fa-xl"></i></a>
+                            <a href="https://github.com/diegomata90"><i class="fa-brands fa-github fa-xl"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="About" id="about">
+                    <h1>About</h1>
+                    <br>
+                    <h3>Servicios</h3>
+                    <div class="marca_titulo">
+                        <div class="punto bgprimary"></div>
+                        <div class="linea bgprimary"></div>
+                    </div>
+                    <div class="about-content">
+                        <div class="skill">
+                            <h3 class="animado">Lorem ipsum dolor sit.</h3>
+                            <br>
+                            <p class="animado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+                                repudiandae!</p>
+                            <br>
+                            <h3 class="animado">Lorem ipsum dolor sit.</h3>
+                            <p class="animado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+                                repudiandae!</p>
+                            <br>
+                            <h3 class="animado">Lorem ipsum dolor sit.</h3>
+                            <p class="animado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+                                repudiandae!</p>
+                        </div>
+                        <div class="img-skill animado" id="imgskill">
+                            <img src="./static/img/Developer_activity.gif" alt="img-skill">
                         </div>
                     </div>
 
                 </div>
-            </section>
-   
-            <section id="about" class="about">
-                <div class="container">
-                    <h2 class="text-left mt-5">About</h2> 
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                </div>
-                
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-12">
-                            <img id="img-about" class="img-fluid" src="./static/img/Mecartoon.png" alt="" class="">
-                        </div>
-                        <div class="col-md-8 col-sm-12">
-                            <h3>Web Developer</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-12">
-                                    <li>1</li>
-                                    <li>2</li>
-                                    <li>3</li>
-                                    <li>4</li>
+                <div class="skill" id="skill">
+                    <h1>My Skill</h1>
+                    <div class="marca_titulo">
+                        <div class="punto bgprimary"></div>
+                        <div class="linea bgprimary"></div>
+                    </div>
+                    <div class="tools-container">
+                        <div>
+                            <h4>Estan son, algunas, tecnologías que utilizo para crear aplicciones del lado del cliente</h4>
+                            <div class="tools">
+
+                                <div>
+                                    <i class="fa-brands fa-html5"></i>
+                                    <span>HTML</span>
                                 </div>
-                                <div class="colmd-6 col-sm-12">
-                                    <li>5</li>
-                                    <li>6</li>
-                                    <li>7</li>
-                                    <li>8</li>
+                                <div>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <span>CSS</span>
                                 </div>
+                                <div>
+                                    <i class="fa-brands fa-js"></i>
+                                    <span>JS</span>
+                                </div>
+                                <div>
+                                    <i class="fa-brands fa-bootstrap"></i>
+                                    <span>Bootrastrap</span>
+                                </div>
+                                <div>
+                                    <i class="fa-brands fa-bootstrap"></i>
+                                    <span>Tailwindcss</span>
+                                </div>
+                                
                             </div>
+                        </div>
+                        <div>
+                            <h4>Estas son, algunas tecnologías que utilizo para crear aplicaciones back-end</h4>
+                            <div class="tools">
 
+                                <div>
+                                    <i class="fa-brands fa-html5"></i>
+                                    <span>HTML</span>
+                                </div>
+                                <div>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <span>CSS</span>
+                                </div>
+                                <div>
+                                    <i class="fa-brands fa-js"></i>
+                                    <span>JS</span>
+                                </div>
+                                <div>
+                                    <i class="fa-brands fa-bootstrap"></i>
+                                    <span>Bootrastrap</span>
+                                </div>
+                                <div>
+                                    <i class="fa-brands fa-bootstrap"></i>
+                                    <span>Tailwindcss</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div>
+                            <h4>Otras más.</h4>
+                            <div class="tools">
+
+                                <div>
+                                    <i class="fa-brands fa-html5"></i>
+                                    <span>HTML</span>
+                                </div>
+                                <div>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <span>CSS</span>
+                                </div>
+                                <div>
+                                    <i class="fa-brands fa-js"></i>
+                                    <span>JS</span>
+                                </div>
+                                <div>
+                                    <i class="fa-brands fa-bootstrap"></i>
+                                    <span>Bootrastrap</span>
+                                </div>
+                                <div>
+                                    <i class="fa-brands fa-bootstrap"></i>
+                                    <span>Tailwindcss</span>
+                                </div>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <section id="resume" class="resume">
-                <div class="container">
-                    <h2 class="text-left mt-5">Resume</h2> 
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                </div>
-                
-                <div class="container">
-                    <div class="row">
-                        <div class="col-4">
-                            Texto 1
+                <div class="portafolio" id="portafolio">
+                    <h1>Portafolio</h1>
+                    <br>
+                    <h3>Algunos proyectos</h3>
+                    <div class="marca_titulo">
+                        <div class="punto bgprimary"></div>
+                        <div class="linea bgprimary"></div>
+                    </div>
+                    <div class="grid-portafolio">
+                        <div>
+                            <img src="./static/img/WebPersonal.png" alt="foto1">
+                            <a href="https://diegomata90.github.io/" class="left">
+                                <i class="fa-solid fa-earth-americas fa-spin-pulse"></i>
+                                Website
+                            </a>
+                            <a href="https://github.com/diegomata90/diegomata90.github.io.git" class="right">
+                                <i class="fa-brands fa-github"></i>
+                                Repository
+                            </a>
                         </div>
-                        <div class="col-8">
-                            Texto 2
+                        <div>
+                            <img src="./static/img/powerbi.png" alt="foto2">
+                            <a href="#" class="left">
+                                <i class="fa-solid fa-earth-americas fa-spin-pulse"></i>
+                                Website
+                            </a>
+                            <a href="#" class="right">
+                                <i class="fa-brands fa-github"></i>
+                                Repository
+                            </a>
+                        </div>
+                        <div>
+                            <img src="/static/img/powerbi.png" alt="foto3">
+                            <a href="#" class="left">
+                                <i class="fa-solid fa-earth-americas fa-spin-pulse"></i>
+                                Website
+                            </a>
+                            <a href="#" class="right">
+                                <i class="fa-brands fa-github"></i>
+                                Repository
+                            </a>
+                        </div>
+                        <div>
+                            <img src="./static/img/WebPersonal.png" alt="foto4">
+                            <a href="#" class="left">
+                                <i class="fa-solid fa-earth-americas fa-spin-pulse"></i>
+                                Website
+                            </a>
+                            <a href="#" class="right">
+                                <i class="fa-brands fa-github"></i>
+                                Repository
+                            </a>
+                        </div>
+                        <div>
+                            <img src="./static/img/WebPersonal.png" alt="foto5">
+                            <a href="#" class="left">
+                                <i class="fa-solid fa-earth-americas fa-spin-pulse"></i>
+                                Website
+                            </a>
+                            <a href="#" class="right">
+                                <i class="fa-brands fa-github"></i>
+                                Repository
+                            </a>
                         </div>
                     </div>
-                </div>
-            </section>
 
-          <!-- ======= Footer ======= -->
-        <footer id="footer" class="text-center py-3">
-            <div class="container">
-            <div class="copyright">
-                <p>&copy; Copyright <strong><span>Diego Mata</span></strong>
-                
-                  Designed by <a href="#" >Diego Mata</a></p>
+                </div>
+                <div class="contact" id="contact">
+                    <h1>Contact</h1>
+                    <br>
+                    <h3>Puedes contactarme en:</h3>
+                    <div class="marca_titulo">
+                        <div class="punto bgprimary"></div>
+                        <div class="linea bgprimary"></div>
+                    </div>
+                    <div class="grid-contact">
+                        <div class="email">
+                            <a href="mailto:diegomata90@gmail.com"><img src="./static/img/gmail.png" alt="" class="thumbnail"></a>
+                            <span>Escribeme</span>
+                        </div>
+                        <div class="github">
+                            <a href="https://github.com/diegomata90"><img src="./static/img/github.png" alt="" class="thumbnail"></a>
+                            <span>Buscame</span>
+                        </div>
+                        <div class="linkedin">
+                            <a href="https://www.linkedin.com/in/diego-mata-1ts1st3m45/"><img src="./static/img/linkedin.png" alt="" class="thumbnail"></a>
+                            <span>Buscame</span>
+                        </div>
+                        <div class="telegram">
+                            <a href="https://t.me/lmata90"><img src="./static/img/telegrama.png" alt="" class="thumbnail"></a>
+                            <span>Escribeme</span>
+                        </div>
+
+                    </div>
+                </div>
+            <div>
+                <p>Stay Connected</p>
+                <p>San Jose, Costa Rica</p>
             </div>
             </div>
-        </footer><!-- End  Footer -->    
-  
-        <!-- Option 2: Separate Popper and Bootstrap JS -->
-   
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-        
-        <!-- Typed JS -->
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        
-        <!-- Anime for Typed JS -->
-        <script src="./static/js/anime.js"></script>
-    </body>
+        </div>
+
+        <!-- Pie de la Página -->
+        <footer class="footer" id="footer">
+            <div class="copy">
+                <div>
+                    <a href="./index.html" class="logo">
+                        <div class="logo-m"><i class="fas fa-solid fa-code" id="code-unhiden"></i> Diego Mata</div>
+                    </a>
+                </div>
+                <div>
+                    <div class="header">
+                        <nav class="nav">
+                            <ul>
+                                <li><a href="#hero"><i class="fa-solid fa-house"></i> Home</a></li>
+                                <li><a href="#about"><i class="fa-solid fa-pen-nib"></i> About</a></li>
+                                <li><a href="#skill"><i class="fas fa-solid fa-user-tie"></i> Resume</a></li>
+                                <li><a href="#portafolio"><i class="fa-solid fa-briefcase"></i> Works</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div>
+                    <p>© Copyright
+                        Designed by <a href="#">Diego Mata</a></p>
+                </div>
+
+            </div>
+            <div class="footerColor">
+                <div class="color1"></div>
+                <div class="color2"></div>
+                <div class="color3"></div>
+                <div class="color4"></div>
+                <div class="color5"></div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <!-- Animacion DIV -->
+    <script src="static/js/animationdiv.js"></script>
+
+    <!-- Typed JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Anime for Typed JS -->
+    <script src="static/js/typeconfig.js"></script>
+
+
+</body>
+
 </html>
-
-
