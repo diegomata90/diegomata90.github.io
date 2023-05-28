@@ -350,7 +350,7 @@ h1{
 }
 
 .skill .tools-container>div>h4{
-  margin-bottom: 35px;
+  margin-bottom: 2.1875em;
 }
 
 .skill .tools-container>div{
@@ -366,7 +366,7 @@ h1{
 
   display: grid;
   grid-template-columns: repeat(9, 1fr); /* Seis columnas de igual tamaño para los iconos */
-  grid-gap: 25px; /* Espacio entre los iconos */
+  grid-gap: 1.5625em; /* Espacio entre los iconos */
 
   justify-content: center;
   align-items: center;
@@ -535,8 +535,8 @@ color: #838383; /* Cambio de color del ícono al pasar el cursor */
 .container .footer {
   grid-area: fooder;
   font-size: 0.75rem;
-  padding-left: 28px;
-  padding-right: 28px;
+  padding-left: 1.75em;
+  padding-right: 1.75em;
 
   display: grid;
   grid-gap: 1.25em;
