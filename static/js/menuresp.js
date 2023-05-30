@@ -12,4 +12,5 @@ function activaMenu(){
     barras.forEach(child =>{child.classList.toggle('animada')})
 };
 
+
 ham.addEventListener('click',activaMenu);

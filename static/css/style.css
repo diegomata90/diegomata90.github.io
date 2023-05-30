@@ -78,28 +78,30 @@ h1{
 
 
 /* Estilos Menu */
-header {
+.header {
   grid-area: header;
   list-style-type: none;
   margin: 0;
-  text-align: left;
+  text-align: right;
 }
 
 .logo{
-  padding-left: 1px;
-  width: 50px; 
+  float: left;
+  /* Alinea el logo a la izquierda */
+  padding: 10px;
   height: 40px;
 }
 
-nav{
-  display: flex;
-  align-items: center;
+.nav{
+  /* display: flex; */
+  align-items:center;
   justify-content: space-around;
   min-height: 8vh;
+  margin: 10px 0;
   /* background-color: #F2F0EE; */
 }
 
-nav .ham{
+.nav .ham{
   display: none;
   cursor: pointer;
   border: none;
@@ -108,7 +110,7 @@ nav .ham{
   background-color:transparent;
 }
 
-nav .ham span{
+.nav .ham span{
   display: block;
   background-color: #000000;
   height: 3px;
@@ -118,15 +120,15 @@ nav .ham span{
 }
 
 .enlace-menu{
-  display: flex;
   padding: 10px 0 10px 0 ;
+  float: right;
 }
 
 .enlace-menu li{
-  padding: 0 10px;
-  float:right ;
+  float:left;
   list-style-type: none; 
-  transition: 0.3s;
+  transition: 0.4s;
+  padding: 10px 20px;
 }
 
 .enlace-menu li a{
@@ -134,34 +136,19 @@ nav .ham span{
   /* font-size: 28.8px; */
   color: #000000;
   position: relative;
-  /* Para posicionar el subrayado */
-  transition: color 0.3s ease;  /* Transición suave para el cambio de color */
+  transition: color 0.2s ease;
 }
 
-.enlace-menu li a::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 0.125em;
-  /* Grosor del subrayado */
-  bottom: -0.1875em;
-  /* Espacio entre el texto y el subrayado */
-  left: 0;
-  background-color: transparent;
-  /* Color inicial del subrayado */
-  transition: background-color 0.3s ease;
-  /* Transición suave */
+.enlace-menu li:hover {
+  color: #fcfcfc;
+  background-color:var(--color-primariohover);
+  transform: rotate(-20deg);
 }
 
-.enlace-menu li a:hover {
-  color: var(--color-primario);
-  /* Color de la letra al hacer hover */
+.enlace-menu li a:hover{
+  color: #fcfcfc;
 }
 
-.enlace-menu li a:hover::after {
-  background-color: var(--color-primario);
-  /* Color del subrayado al hacer hover */
-}
 
 
 /* Stylo contenido*/
@@ -731,22 +718,28 @@ color: #838383; /* Cambio de color del ícono al pasar el cursor */
   }
 
   /*Menú responsive*/
-  nav .ham{
+  .nav .ham{
     display: block;
     position: absolute;
-    top: 25px;
+    top: 15px;
     right: 25px;
     transition: 0.3s 0.3s;
   }
 
-  nav .ham:hover{
+  .nav .ham:hover{
     transform: rotate(360deg);
   }
 
-  nav{
+  .nav{
     flex-direction: column;
     align-items: flex-start;
-    padding: 25px 0;
+    padding: 15px 0;
+    margin: 0;
+  }
+
+  .logo{
+    margin: 0;
+    padding: 0;
   }
 
   .enlace-menu{
@@ -765,6 +758,7 @@ color: #838383; /* Cambio de color del ícono al pasar el cursor */
     width: 100%;
     text-align: center;
     padding: 20px;
+    font-size: 17px;
   }
 
   .enlace-menu.activado{
