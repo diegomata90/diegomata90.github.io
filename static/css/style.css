@@ -429,11 +429,11 @@ color: #838383; /* Cambio de color del ícono al pasar el cursor */
 }
 
 .grid-portafolio a.left {
-  left: 6.2em;
+  left: 10.63em;
 }
 
 .grid-portafolio a.right {
-  right: 5.6em;
+  right: 10.63em;
 }
 
 .grid-portafolio div:hover a {
@@ -595,7 +595,11 @@ color: #838383; /* Cambio de color del ícono al pasar el cursor */
 
 }
 
-/* ================Estilos responsivos ===================================*/
+/* 
+===================================
+Estilos responsivos 
+===================================
+*/
 
 /* 3XL large devices (large desktops 1200px para arriba)*/
 @media (min-width: 1400px) {
@@ -698,11 +702,11 @@ color: #838383; /* Cambio de color del ícono al pasar el cursor */
     grid-gap: 20px; /* Espacio entre los iconos */
   }
   .grid-portafolio a.left {
-    left: 70px;
+    left: 20px;
   }
   
   .grid-portafolio a.right {
-    right: 70px;
+    right: 20px;
   }
   
   
@@ -758,7 +762,7 @@ color: #838383; /* Cambio de color del ícono al pasar el cursor */
     width: 100%;
     text-align: center;
     padding: 20px;
-    font-size: 17px;
+    font-size: 20px;
   }
 
   .enlace-menu.activado{
@@ -776,6 +780,10 @@ color: #838383; /* Cambio de color del ícono al pasar el cursor */
 
   .ham .br-3.animada{
     transform: rotate(45deg) translate(-10px ,-8px);
+  }
+
+  .enlace-menu li:hover {
+    transform: rotate(0deg);
   }
 
   @keyframes muestraMenu {
