@@ -128,7 +128,7 @@ h1{
   float:left;
   list-style-type: none; 
   transition: 0.4s;
-  padding: 10px 20px;
+  padding: 10px 8px;
 }
 
 .enlace-menu li a{
@@ -246,13 +246,13 @@ h1{
   color: #58595B;
 }
 
-.fa-linkedin:hover {
-  color: blue;
+.fa-telegram:hover {
+  color: rgb(0, 162, 255);
   transition: color 0.3s ease;
 }
 
-.fa-facebook:hover {
-  color: blue;
+.fa-linkedin:hover {
+  color: rgb(0, 81, 255);
   transition: color 0.3s ease;
 }
 
@@ -381,6 +381,35 @@ color: #838383; /* Cambio de color del ícono al pasar el cursor */
   margin-bottom: 0.3125em; /* Espacio entre el icono y el texto */
   transition: transform 0.3s ease; /* Transición suave para el efecto de zoom en el texto */
 }
+
+#btn-see{
+  display: inline-flex;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  padding: 20px 30px 30px 30px;
+  background-color: var(--color-primario);
+  /* justify-content: center; */
+  transition: transform 0.4s ease; /* Transición suave para el efecto de zoom en el texto */
+}
+
+#btn-see a{
+  display: block;
+  text-decoration: none;
+  color: #F2F0EE;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#btn-see:hover{
+background-color: var(--color-primariohover);
+color: #F2F0EE;
+transform: scale(1.2);
+}
+
+
+
 
 .tools div:hover i {
   transform: scale(1.2); /* Efecto de zoom en el texto al pasar el cursor */
