@@ -181,7 +181,8 @@ h1{
 }
 
 #descripcion {
-  margin-top: 2.8125em;
+  margin-top: 2.188em;
+  font-size:large;
 }
 
 /* Estilo del botón */
@@ -307,20 +308,21 @@ h1{
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, auto);
 
-  grid-template-areas: "skill img-skill";
+  grid-template-areas: "about-skill img-skill";
 
-  height: 35em;
+
   background-color: #F2F0EE;
   border-radius: 0.625em;
-  padding: 1.875em;
-  margin-bottom: 1.875em;
+  /* padding: 1.875em; */
+  margin-bottom: 1.88em;
 }
 
-.About .about-content .skill {
-  grid-area: skill;
+.About .about-content .about-skill {
+  grid-area: about-skill;
   text-align: center;
   align-items: center;
   justify-content: center;
+  padding: 2.5em;
 }
 
 .About .about-content .img-skill {
@@ -330,14 +332,19 @@ h1{
   justify-content: center;
 }
 
-.img-skill img{
+.About .about-content .img-skill img{
   width: 100%; 
   height:80%;
   object-fit: fill;
 }
-.skill .tools-container{
-  min-height:46.88em;
+
+.skill{
+  margin-top: 3.75em;
 }
+
+/* .skill .tools-container{
+  height:100vh;
+} */
 
 .skill .tools-container>div>h4{
   margin-bottom: 2.1875em;
@@ -360,6 +367,7 @@ h1{
 
   justify-content: center;
   align-items: center;
+  margin-right: 1.25em;
 }
 
 .skill .tools-container .tools >  div {
@@ -387,7 +395,7 @@ color: #838383; /* Cambio de color del ícono al pasar el cursor */
 .cta {
   position: relative;
   margin: auto;
-  padding: 19px 22px;
+  padding: 1.1875em 1.375em;
   transition: all 0.2s ease;
   text-decoration: none;
   color: #000000;
@@ -399,16 +407,16 @@ color: #838383; /* Cambio de color del ícono al pasar el cursor */
   top: 0;
   left: 0;
   display: block;
-  border-radius: 28px;
+  border-radius: 1.75em;
   background: rgba(255, 171, 157, 0.5);
-  width: 56px;
-  height: 56px;
+  width: 3.5em;
+  height: 3.5em;
   transition: all 0.3s ease;
 }
 .cta span {
   position: relative;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 1em;
+  line-height: 1.125em;
   font-weight: 900;
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -447,7 +455,7 @@ color: #838383; /* Cambio de color del ícono al pasar el cursor */
 }
 
 .portafolio{
-  margin-top: 3.125em;
+  margin-top: 3.75em;
 }
 
 .portafolio .grid-portafolio{
@@ -509,7 +517,7 @@ color: #838383; /* Cambio de color del ícono al pasar el cursor */
 
 .contact{
   min-height: 18.75em;
-  margin: 2.5em 0 2.5em 0;
+  margin: 3.75em 0 2.5em 0;
 }
 
 .contact .grid-contact {
@@ -749,7 +757,7 @@ Estilos responsivos
   }
 
    .About .about-content { 
-    grid-template-areas: "skill skill"
+    grid-template-areas: "about-skill about-skill";
   }
 
   .img-skill img{

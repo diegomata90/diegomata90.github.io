@@ -5,7 +5,7 @@ function mostrarScroll() {
 
     for (var i = 0; i < animado.length; i++) {
         let alturaAnimado = animado[i].offsetTop;
-        if (alturaAnimado - 350 < scrollTop) {
+        if (alturaAnimado - 825 < scrollTop) {
             animado[i].style.opacity = 1;
             animado[i].classList.add("mostrarArriba");
         } else {
@@ -16,11 +16,11 @@ function mostrarScroll() {
 }
 
 function ocultarScroll() {
-    let scrollBottom = document.documentElement.scrollTop + window.innerHeight;
+    let scrollBottom = document.documentElement.scrollTop; //+ window.innerHeight;
 
     for (var i = 0; i < animado.length; i++) {
         let alturaAnimado = animado[i].offsetTop;
-        if (alturaAnimado - 200 > scrollBottom) {
+        if (alturaAnimado - 750 > scrollBottom) {
             animado[i].style.opacity = 0;
             animado[i].classList.remove("mostrarArriba");
             animado[i].classList.add("ocultarAbajo");
