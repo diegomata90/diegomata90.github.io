@@ -482,7 +482,7 @@ color: #838383; /* Cambio de color del ícono al pasar el cursor */
   object-fit: cover;
 }
 
-.grid-portafolio a {
+.grid-portafolio .button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -496,12 +496,12 @@ color: #838383; /* Cambio de color del ícono al pasar el cursor */
   background-color: #0000008a;
 }
 
-.grid-portafolio a.left {
-  left: 10.63em;
+.grid-portafolio .button.left {
+  left: 2.8125em;
 }
 
-.grid-portafolio a.right {
-  right: 10.63em;
+.grid-portafolio .button.right {
+  right: 2.8125em;
 }
 
 .grid-portafolio div:hover a {
