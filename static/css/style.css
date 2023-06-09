@@ -769,12 +769,12 @@ Estilos responsivos
     grid-template-columns: repeat(1, 1fr); /* Tres columnas de igual tamaño para los iconos */
     grid-gap: 20px; /* Espacio entre los iconos */
   }
-  .grid-portafolio a.left {
-    left: 20px;
+  .grid-portafolio .button.left {
+    left: 40px;
   }
   
-  .grid-portafolio a.right {
-    right: 20px;
+  .grid-portafolio .button.right {
+    right: 40px;
   }
   
   
