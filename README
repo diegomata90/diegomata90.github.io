@@ -1,6 +1,6 @@
 # My Webpage
 
-![Captura Pagina](https://raw.githubusercontent.com/diegomata90/diegomata90.github.io/main/static/img/WebPersonal.png)
+![Captura Pagina](/static/img/WebPersonal.png)
 
 ## Description
 
@@ -13,7 +13,7 @@ This is the repository for my personal webpage. Here I share information about m
   - HTML5
   - CSS3
   - JavaScript
-  - Bootstrap
+    ![Boostrap](static/img/bootstrap.png) Bootstrap
   - TailwindCSS
 
 - **Backend:**
