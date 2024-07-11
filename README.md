@@ -10,7 +10,7 @@ This is the repository for my personal webpage. Here I share information about m
 
 ### Frontend
 
-- ![HTML5](/static/img/html-5.png) HTML5
+- ![HTML5](/static/img/html-5.png | width="50") HTML5
 - ![CSS3](/static/img/css-3.png) CSS3
 - ![JavaScript](/static/img/js.png) JavaScript
 - ![Bootstrap](/static/img/bootstrap.png) Bootstrap
