@@ -10,49 +10,47 @@ This is the repository for my personal webpage. Here I share information about m
 
 ### Frontend
 
-- ![HTML5](/static/img/html-5.png | width="50") HTML5
-- ![CSS3](/static/img/css-3.png) CSS3
-- ![JavaScript](/static/img/js.png) JavaScript
-- ![Bootstrap](/static/img/bootstrap.png) Bootstrap
-- ![Boostrap](static/img/bootstrap.png) Bootstrap
-- ![TailwindCSS](/static/img/tailwindcss.png) TailwindCSS
+- HTML5
+- JavaScript
+- Bootstrap
+- TailwindCSS
 
 ### Backend
 
-- ![Python](/static/img/python.png) Python (Flask)
-- ![ASP.NET](/static/img/aspnet.png) ASP.NET
-- ![Firebase](/static/img/firebase.png) Firebase
-- ![SQL Server](/static/img/sqlserver.png) SQL Server
-- ![MySQL](/static/img/mysql.png) MySQL
+- Python (Flask)
+- ASP.NET
+- Firebase
+- SQL Server
+- MySQL
 
 ### Mobile Development
 
-- ![Kotlin](/static/img/kotlin.png) Kotlin
-- ![Android](/static/img/android.png) Android
-- ![Firebase](/static/img/firebase.png) Firebase
-- ![MVVM](/static/img/mvvm.png) MVVM Architecture
-- ![API Integration](/static/img/api.png) API Integration
+- Kotlin
+- Android
+- Firebase
+- MVVM Architecture
+- API Integration
 
 ### Data Science
 
-- ![Python](/static/img/python.png) Python
-- ![Pandas](/static/img/pandas.png) Pandas
-- ![NumPy](/static/img/numpy.png) NumPy
-- ![Scikit-learn](/static/img/scikit.png) Scikit-learn
-- ![SQL](/static/img/sql.png) SQL
-- ![Power BI](/static/img/powerbi.png) Power BI
-- ![Tableau](/static/img/tableau.png) Tableau
-- ![Excel](/static/img/excel.png) Excel
-- ![Jupyter Notebook](/static/img/jupyter.png) Jupyter Notebook
-- ![Google Colab](/static/img/colab.png) Google Colab
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- SQL
+- Power BI
+- Tableau
+- Excel
+- Jupyter Notebook
+- Google Colab
 
 ### Others
 
-- ![Git](/static/img/git.png) Git
-- ![GitHub](/static/img/github.png) GitHub
-- ![Docker](/static/img/docker.png) Docker
-- ![Postman](/static/img/postman.png) Postman
+- Git
+- GitHub
+- Docker
+- Postman
 
-## Iconos utilizados:
+## Icono Utilizados
 
-[Flaticon](https://www.flaticon.es/resultados?word=telegram)
+- [Flaticon](https://www.flaticon.es/resultados?word=telegram)
